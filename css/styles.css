@@ -7,6 +7,8 @@
 html {
     box-sizing: border-box;
     width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
     *,
     *::after,
@@ -60,6 +62,7 @@ html {
     --s-lightgrey: #757575;
     --s-whitebutton: #F5F4FA;
 }
+    
 /* heder style */
 
 /* logo*/
@@ -80,6 +83,8 @@ html {
     .container-site-nav {
     display: flex;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
     }
     .site-nav {
     display: flex;
@@ -130,6 +135,7 @@ html {
     .hero {
     background-color: var(--s-grey);
     text-align: center;
+    padding: 200px 452px 280px;
 }
 /*hero text*/
     .hero-title { 
@@ -137,10 +143,8 @@ html {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;   
 }
 /*hero button*/
     .button-hero {
@@ -155,8 +159,11 @@ html {
     letter-spacing: 0.06em;
 }
 /*our advantages*/
-    .section {
-        padding: 94px 215px;
+    section {
+    padding: 94px 215px;
+}
+    .section-advantages{
+    padding-bottom: 0;
     }
     .our-advantages{
     display: flex;
@@ -215,6 +222,9 @@ html {
     .container-team {
     display: flex;
 }
+    .section-tiam {
+    background: #F5F4FA;
+}
     .team-list {
     margin-right: 30px;
     margin-top: 50px;
@@ -252,7 +262,9 @@ html {
 
 /*futer*/
     .bloc-footer {
-    background-color: var(--s-grey)
+    background-color: var(--s-grey);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
     address {
     font-style: normal;
@@ -265,6 +277,7 @@ html {
     color: var(--s-blue);
 
     margin-left: 215px;
+
 }
     .logo-studio-footer {
     color: var(--s-white);
@@ -339,11 +352,13 @@ html {
     .our-portfolio {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 215px 94px;
+    padding-top: 50px;
+    padding-bottom: 94px;
 }
     .list-services {
     margin-right: 30px;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
+    border: 1px solid #EEEEEE; 
 }
     .list-services:nth-child(3n) {
     margin-right: 0;
@@ -363,7 +378,7 @@ html {
     color: var(--s-white);
 }
     .services-foto {
-    width: 370px;
+    width: 367px;
 }
     .services-item {
     font-weight: 700;
@@ -372,12 +387,15 @@ html {
     letter-spacing: 0.06em;
     color: var(--s-black);
     margin-top: 20px;
+    margin-left: 24px;
 }
     .services-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     margin-top: 4px;
+    margin-left: 24px;
+    padding-bottom: 20px;
 }
 
 

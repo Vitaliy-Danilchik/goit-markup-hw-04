@@ -91,13 +91,15 @@ html {
     color: var(--s-black);
 }
 /*sate nav*/
+
+    header {
+    border-bottom: 1px solid #ECECEC;
+}
     .container-site-nav {
     display: flex;
-    justify-content: space-between;
 }
     .site-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
     .menu-nav {
@@ -112,6 +114,7 @@ html {
 /*auth-nav*/
     .auth-nav {
     display: flex;
+    margin-left: auto;
    
 }
     .link-nav,
@@ -246,12 +249,14 @@ html {
     .container-team {
     display: flex;
 }
+    .section-title {
+    padding-bottom: 50px;
+}
     .section-tiam {
     background: #F5F4FA;
 }
     .team-list {
     margin-right: 30px;
-    margin-top: 50px;
     background-color: #fff;
 }
     .team-list:last-child {

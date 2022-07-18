@@ -28,7 +28,7 @@ html {
     /* Класс для обнуления базовых свойств у списков (ul) */
     ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
     margin: 0;
 }
     /* Класс для обнуления базовых свойств у ссылок */
@@ -63,6 +63,15 @@ html {
     --s-whitebutton: #F5F4FA;
 }
     
+/*container*/
+    .container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
 /* heder style */
 
 /* logo*/
@@ -73,8 +82,10 @@ html {
     font-size: 26px;
     line-height: 1.19;
 
-    margin-left: 215px;
     margin-right: 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
     .logo-studio {
     color: var(--s-black);
@@ -82,15 +93,18 @@ html {
 /*sate nav*/
     .container-site-nav {
     display: flex;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
-    }
+    justify-content: space-between;
+}
     .site-nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
     .menu-nav {
+    display: block;
     margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
     .menu-nav:last-child {
     margin-right: 0;
@@ -98,14 +112,8 @@ html {
 /*auth-nav*/
     .auth-nav {
     display: flex;
-    margin-left: 215px;
    
 }
-    .menu-nav {
-    display: inline-flex;
-    align-items: baseline;
-    justify-content: center;
-    }
     .link-nav,
     .link-nav-portfolio {
     font-weight: 500;
@@ -122,10 +130,6 @@ html {
     .link-nav:focus {
     color: var(--s-blue);
 }
-    .svg-mailtel{
-    margin-right: 10px;
-    }
-
 /* mail and telephon*/
 
     .link-mailtel {
@@ -135,32 +139,35 @@ html {
     letter-spacing: 0.02em;
     color: var(--s-lightgrey);
 }
-    .svg-mailtel{
-    fill: var(--s-lightgrey);
-    }
     .link-mailtel:hover,
     .link-mailtel:focus {
     color: var(--s-blue);
 }
-    .link-mailtel:hover .svg-mailtel,
-    .link-mailtel:focus .svg-mailtel {
-    fill: var(--s-blue);
-}
 
 /*hero background*/
-    .hero {
+    .hero{
     background-color: var(--s-grey);
+    height: 600px;
+    padding-top: 200px;
     text-align: center;
-    padding: 200px 452px 280px;
+    
 }
+
 /*hero text*/
     .hero-title { 
-    color: var(--s-white);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    text-transform: uppercase;   
+
+    text-transform: uppercase;
+    color: var(--s-white);
+    
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;      
 }
 /*hero button*/
     .button-hero {
@@ -173,10 +180,11 @@ html {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
+    padding: 10px 32px;
 }
 /*our advantages*/
     section {
-    padding: 94px 215px;
+    padding: 94px 0;
 }
     .section-advantages{
     padding-bottom: 0;
@@ -275,41 +283,6 @@ html {
     .foto-team {
     width: 270px;
     }
-    /*social icons*/
-    .socials-list{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 16px;
-    gap: 10px;
-    }
-    .socials-item {
-        width: 44px;
-        height: 44px;
-}
-    .socials-link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-
-        background: #fff;
-        border-radius: 50%;
-}
-    .socials-icon {
-    fill: #AFB1B8
-}
-    .socials-link:hover,
-    .socials-link:focus {
-        background-color: #2196F3;
-    }
-    .socials-link:hover .socials-icon,
-    .socials-link:focus .socials-icon {
-        fill: #fff
-    }
-   
-    
 
 /*futer*/
     .bloc-footer {
@@ -327,8 +300,6 @@ html {
     line-height: 1.19;
     color: var(--s-blue);
 
-    margin-left: 215px;
-
 }
     .logo-studio-footer {
     color: var(--s-white);
@@ -341,7 +312,6 @@ html {
     font-size: 14px;
     line-height: 1.71;
     color: var(--s-white);
-    margin-left: 215px;
 }
     .footer-link-maps:focus,
     .footer-link-maps:hover {
@@ -353,7 +323,6 @@ html {
     font-size: 14px;
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
-    margin-left: 215px;
 }
     .footer-link:focus,
     .footer-link:hover {
@@ -393,6 +362,16 @@ html {
 
     background-color: var(--s-whitebutton);
     text-align: center;
+    padding: 6px 22px;
+}
+    .button-filtr-portfolio {
+    background-color: var(--s-blue);
+    color: var(--s-white);
+}
+    .button-filtr:hover,
+    .button-filtr:focus {
+    background-color: var(--s-blue);
+    color: var(--s-white);
 }
     .button-list {
     margin-right: 30px;
@@ -409,7 +388,6 @@ html {
     .list-services {
     margin-right: 30px;
     margin-bottom: 30px;
-    border: 1px solid #EEEEEE; 
 }
     .list-services:nth-child(3n) {
     margin-right: 0;
@@ -417,19 +395,9 @@ html {
     .list-services:nth-last-child(-n+3) {
     margin-bottom: 0;    
     }
-
-    .button-filtr-portfolio {
-    background-color: var(--s-blue);
-    color: var(--s-white);
-}
-
-    .button-filtr:hover,
-    .button-filtr:focus {
-    background-color: var(--s-blue);
-    color: var(--s-white);
-}
+   
     .services-foto {
-    width: 367px;
+    width: 370px;
 }
     .services-item {
     font-weight: 700;
@@ -446,8 +414,13 @@ html {
     line-height: 1.87;
     margin-top: 4px;
     margin-left: 24px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
+.info {
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+  }
 
 
 

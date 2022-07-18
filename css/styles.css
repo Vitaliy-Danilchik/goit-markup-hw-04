@@ -101,6 +101,11 @@ html {
     margin-left: 215px;
    
 }
+    .menu-nav {
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    }
     .link-nav,
     .link-nav-portfolio {
     font-weight: 500;
@@ -117,6 +122,10 @@ html {
     .link-nav:focus {
     color: var(--s-blue);
 }
+    .svg-mailtel{
+    margin-right: 10px;
+    }
+
 /* mail and telephon*/
 
     .link-mailtel {
@@ -126,9 +135,16 @@ html {
     letter-spacing: 0.02em;
     color: var(--s-lightgrey);
 }
+    .svg-mailtel{
+    fill: var(--s-lightgrey);
+    }
     .link-mailtel:hover,
     .link-mailtel:focus {
     color: var(--s-blue);
+}
+    .link-mailtel:hover .svg-mailtel,
+    .link-mailtel:focus .svg-mailtel {
+    fill: var(--s-blue);
 }
 
 /*hero background*/
@@ -259,6 +275,41 @@ html {
     .foto-team {
     width: 270px;
     }
+    /*social icons*/
+    .socials-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 10px;
+    }
+    .socials-item {
+        width: 44px;
+        height: 44px;
+}
+    .socials-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        background: #fff;
+        border-radius: 50%;
+}
+    .socials-icon {
+    fill: #AFB1B8
+}
+    .socials-link:hover,
+    .socials-link:focus {
+        background-color: #2196F3;
+    }
+    .socials-link:hover .socials-icon,
+    .socials-link:focus .socials-icon {
+        fill: #fff
+    }
+   
+    
 
 /*futer*/
     .bloc-footer {

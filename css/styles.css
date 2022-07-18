@@ -147,7 +147,7 @@ html {
 /*hero background*/
     .hero{
     background-color: var(--s-grey);
-    height: 600px;
+    padding-bottom: 192.5px;
     padding-top: 200px;
     text-align: center;
     
@@ -252,6 +252,7 @@ html {
     .team-list {
     margin-right: 30px;
     margin-top: 50px;
+    background-color: #fff;
 }
     .team-list:last-child {
     margin-right: 0;    
@@ -279,6 +280,7 @@ html {
     line-height: 1.18;
     text-align: center;
     margin-top: 10px;
+    margin-bottom: 30px;
 }
     .foto-team {
     width: 270px;
@@ -374,7 +376,7 @@ html {
     color: var(--s-white);
 }
     .button-list {
-    margin-right: 30px;
+    margin-right: 8px;
 }
     .button-list:last-child {
     margin-right: 0;
@@ -405,8 +407,8 @@ html {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--s-black);
-    margin-top: 20px;
-    margin-left: 24px;
+    padding-top: 20px;
+    padding-left: 24px;
 }
     .services-text {
     font-weight: 400;

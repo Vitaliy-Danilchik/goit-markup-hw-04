@@ -135,6 +135,14 @@ html {
 }
 /* mail and telephon*/
 
+    .svg-mailtel{
+    margin-right: 10px;
+    }
+    .link-mailtel {
+        display: flex;
+        align-items: center;
+    }
+
     .link-mailtel {
     font-weight: 500;
     font-size: 14px;
@@ -146,6 +154,13 @@ html {
     .link-mailtel:focus {
     color: var(--s-blue);
 }
+    .svg-mailtel{
+    fill: var(--s-lightgrey);
+    }
+    .link-mailtel:hover .svg-mailtel,
+    .link-mailtel:focus .svg-mailtel {
+    fill: var(--s-blue);
+}    
 
 /*hero background*/
     .hero{
@@ -289,6 +304,39 @@ html {
 }
     .foto-team {
     width: 270px;
+    }
+/*social icons*/
+    .socials-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 16px;
+        gap: 10px;
+    }
+    .socials-item {
+        width: 44px;
+        height: 44px;
+}
+    .socials-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        background: #fff;
+        border-radius: 50%;
+}
+    .socials-icon {
+    fill: #AFB1B8
+}
+    .socials-link:hover,
+    .socials-link:focus {
+        background-color: #2196F3;
+    }
+    .socials-link:hover .socials-icon,
+    .socials-link:focus .socials-icon {
+        fill: #fff
     }
 
 /*futer*/

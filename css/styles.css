@@ -165,6 +165,9 @@ html {
 /*hero background*/
     .hero{
     background-color: var(--s-grey);
+    
+    background: rgba(47, 48, 58, 0.4);
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/fon.png);
     padding-bottom: 192.5px;
     padding-top: 200px;
     text-align: center;
@@ -199,6 +202,7 @@ html {
     line-height: 1.87;
     letter-spacing: 0.06em;
     padding: 10px 32px;
+    border: none;
 }
 /*our advantages*/
     section {
@@ -285,6 +289,7 @@ html {
     .team-list {
     margin-right: 30px;
     background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
     .team-list:last-child {
     margin-right: 0;    
@@ -436,6 +441,36 @@ html {
 }
 /*social icons*/
 
+.socials-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    
+    margin-left: 70px;
+}
+.address-footer {
+    display: flex;
+    flex-direction: column;
+}
+footer .container {
+    display: flex;
+    flex-direction: row
+}
+
+.title-socials-footer {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    align-items: flex-start;
+    margin-right: auto;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--s-white);
+
+}
 .socials-list-footer {
     display: flex;
     align-items: center;
@@ -459,7 +494,7 @@ html {
     border-radius: 50%;
 }
 .socials-icon-footer {
-fill: #fff
+    fill: #fff
 }
 .socials-link-footer:hover,
 .socials-link-footer:focus {
@@ -497,7 +532,6 @@ fill: #fff
     font-size: 16px;
     line-height: 1.62;
     
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: 0;
 
@@ -506,6 +540,10 @@ fill: #fff
     padding: 6px 22px;
 }
     .button-filtr-portfolio {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+    
+    .button-filtr-portfolio {
     background-color: var(--s-blue);
     color: var(--s-white);
 }
@@ -513,6 +551,7 @@ fill: #fff
     .button-filtr:focus {
     background-color: var(--s-blue);
     color: var(--s-white);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
     .button-list {
     margin-right: 8px;
@@ -557,6 +596,12 @@ fill: #fff
     margin-left: 24px;
     margin-bottom: 20px;
 }
+    .list-services:hover,
+    .list-services:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+
 .info {
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;

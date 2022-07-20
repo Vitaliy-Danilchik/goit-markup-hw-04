@@ -245,6 +245,18 @@ html {
     margin-top: 10px;
     margin-bottom: 0;
 }
+    .icon-advantages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+    padding: 25px 0;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    }
+
+    
 /* foto what are we doing*/
     .container-foto {
     display: flex;
@@ -312,6 +324,7 @@ html {
         justify-content: center;
         margin-top: 16px;
         gap: 10px;
+        margin-bottom: 30px;
     }
     .socials-item {
         width: 44px;
@@ -333,18 +346,56 @@ html {
     .socials-link:hover,
     .socials-link:focus {
         background-color: #2196F3;
-    }
+}
     .socials-link:hover .socials-icon,
     .socials-link:focus .socials-icon {
         fill: #fff
+}
+/*customers*/
+
+    .list-customers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .icon-customers {
+    padding: 16px 32px;
+    margin-right: 30px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+}
+    .icon-customers:last-child {
+    margin-right: 0; 
+}
+    .svg-customers {
+    fill: #AFB1B8;
     }
+    .icon-customers:hover,
+    .icon-customers:focus {
+    border-color: #2196F3;
+}
+    .icon-customers:hover .svg-customers,
+    .icon-customers:focus .svg-customers {
+    fill: #2196F3;
+}
+   
+    
 
 /*futer*/
     .bloc-footer {
+    display: flex;
+
     background-color: var(--s-grey);
     padding-top: 60px;
     padding-bottom: 60px;
 }
+    .socials-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     address {
     font-style: normal;
 }
@@ -382,6 +433,41 @@ html {
     .footer-link:focus,
     .footer-link:hover {
     color: var(--s-blue);
+}
+/*social icons*/
+
+.socials-list-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    gap: 10px;
+    
+}
+.socials-item-footer {
+    width: 44px;
+    height: 44px;
+}
+.socials-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.socials-icon-footer {
+fill: #fff
+}
+.socials-link-footer:hover,
+.socials-link-footer:focus {
+    background-color: #2196F3;
+}
+.socials-link-footer:hover .socials-icon-footer,
+.socials-link-footer:focus .socials-icon-footer {
+    fill: #fff
 }
 
     
